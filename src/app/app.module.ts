@@ -9,11 +9,15 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { ProfilePage } from '../pages/profile/profile';
 import { RegistrationPage } from '../pages/registration/registration';
+import { ProductsPage } from '../pages/products/products';
+import { AboutPage } from '../pages/about/about';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    ProductsPage,
+    AboutPage,
     LoginPage,
     ProfilePage,
     RegistrationPage
@@ -26,6 +30,8 @@ import { RegistrationPage } from '../pages/registration/registration';
   entryComponents: [
     MyApp,
     HomePage,
+    ProductsPage,
+    AboutPage,
     LoginPage,
     ProfilePage,
     RegistrationPage
