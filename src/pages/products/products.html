@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Ionic Blank
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+      
+<ion-content padding> 
+
+    Here is our talented line of chickens--click on any member of the flock for a detailed description!
+    <p></p>
+    <ion-list no-lines>
+        
+        <button ion-item *ngFor="let item of items" (click)="pressMe(item.name, item.note, item.price, item.description)">
+            Name: {{ item.name }} Note: {{ item.note }} Price: {{ item.price }} Specs: {{ item.description }}
+        </button>
+
+
+    <ion-list no-lines>
