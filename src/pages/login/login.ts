@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
 import { ProfilePage } from '../profile/profile';
+import { PaymentPage } from '../payment/payment';
 
 /**
 * Generated class for the LoginPage page.
@@ -32,6 +33,11 @@ export class LoginPage {
     console.log("Navigating...");
 
     this.navCtrl.push(ProfilePage);
+ }
+
+ navigateToPayment(){
+   console.log("Navigating to payment...");
+   this.navCtrl.push(PaymentPage);
  }
 
  ionViewDidLoad() {

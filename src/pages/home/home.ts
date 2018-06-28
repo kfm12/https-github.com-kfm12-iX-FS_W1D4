@@ -18,7 +18,7 @@ export class HomePage {
   }
 
   navigateToAbout(){
-    console.log("Navigation...");
+    console.log("Navigating...");
 
     this.navCtrl.push(AboutPage);
   }

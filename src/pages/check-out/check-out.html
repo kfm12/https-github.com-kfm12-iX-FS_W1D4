@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Payment Options
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    If you're already a member, log in to complete your transaction.
+    <p></p>
+    <button ion-button (click) = "navigateToLogin()">Login</button>
+    <p></p>
+
+    Otherwise, you can create an account below, or select our one-time payment option.
+    <p></p>
+    
+    <button ion-button (click) = "navigateToRegistration()">Create an Account</button>
+
+    <button ion-button color="secondary" (click)="navigateToPayment()">One-Time Payment</button>
+
+  </ion-content>

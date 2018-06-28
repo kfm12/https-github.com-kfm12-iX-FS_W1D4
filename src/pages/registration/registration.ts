@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
-
+import { RegConfirmPage } from '../reg-confirm/reg-confirm';
 
 @Component({
     selector: 'page-registration',
@@ -15,6 +15,11 @@ export class RegistrationPage {
 
  ionViewDidLoad() {
    console.log('ionViewDidLoad RegistrationPage');
+ }
+
+ navigateToRegConfirm() {
+   console.log("Navigating to reg-confirm...");
+   this.navCtrl.push(RegConfirmPage);
  }
 
 }

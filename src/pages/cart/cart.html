@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        My Cart
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    Welcome to your shopping cart.
+    <p></p>
+  
+    
+    <ion-list>
+
+        <ion-item *ngFor="let product of products">
+            {{ product.name }}
+
+        </ion-item>
+
+
+
+    </ion-list>
+
+    <button ion-button (click) = "navigateToProducts()">Continue Shopping</button>
+
+    <button ion-button color="secondary" (click)="navigateToCheckOut()">Check Out</button>
+
+  </ion-content>

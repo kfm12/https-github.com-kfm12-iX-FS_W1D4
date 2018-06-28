@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Payment
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    Welcome to the payment page
+    <p></p>
+  
+    
+    <ion-list>
+
+        <ion-item *ngFor="let product of products">
+            {{ product.name }}: ${{ product.price }}
+
+        </ion-item>
+
+
+
+    </ion-list>
+    Total cost: ${{ productSum(products) }}
+    <p></p>
+    <button ion-button>Pay</button>
+  </ion-content>

@@ -1,14 +1,31 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            Ionic Blank
+            Products
         </ion-title>
     </ion-navbar>
 </ion-header>
       
-<ion-content padding> 
+<ion-content padding>
 
-    Here is our talented line of chickens--click on any member of the flock for a detailed description!
+    <ion-list>
+
+        <button ion-item *ngFor="let product of products" (click)="navigateToProduct(product)">
+            {{ product.name }}
+
+        </button>
+
+
+
+    </ion-list>
+
+    <button ion-button (click)="navigateToCart()">View My Cart</button>
+
+</ion-content>
+
+
+<!-- <ion-content padding> -->
+    <!-- Here is our talented line of chickens--click on any member of the flock for a detailed description!
     <p></p>
     <ion-list no-lines>
         
@@ -17,4 +34,4 @@
         </button>
 
 
-    <ion-list no-lines>
+    <ion-list no-lines> -->
